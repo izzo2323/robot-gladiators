@@ -14,7 +14,7 @@ var fight = function(enemyName) {
     if (promptFight === "fight" || promptFight === "FIGHT") {
         enemyHealth = enemyHealth - playerAttack;
         console.log(
-        playerName + " attacked" + enemyName + ". " + enemyName + " now has" + enemyHealth + " health remaining."
+        playerName + " attacked " + enemyName + ". " + enemyName + " now has" + enemyHealth + " health remaining."
     );
 
     if ( enemyHealth <=0) {
@@ -26,7 +26,7 @@ var fight = function(enemyName) {
     
     playerHealth = playerHealth - enemyAttack;
     console.log(
-        enemyName + " attacked" + playerName + "." + playerName + " now has" + playerHealth + " health remaining."
+        enemyName + " attacked " + playerName + "." + playerName + " now has" + playerHealth + " health remaining."
     );
     if (playerHealth <=0) {
         window.alert(playerName + " had died!");
@@ -48,8 +48,9 @@ var fight = function(enemyName) {
     }
 };
 
-for(var i = 0; i < enemyNames.length; i++) {
+    for(var i = 0; i < enemyNames.length; i++) {
     fight(enemyNames[i]);
 }
+
 //fight();
 
